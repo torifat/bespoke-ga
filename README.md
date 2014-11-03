@@ -22,7 +22,8 @@ var bespoke = require('bespoke'),
   ga = require('bespoke-ga');
 
 bespoke.from('#presentation', [
-  ga()
+  // Use your Google Analytics Tracking ID instead of 'UA-XXXXX-X'
+  ga({trackingId: 'UA-XXXXX-X'})
 ]);
 ```
 
@@ -30,7 +31,8 @@ When using browser globals:
 
 ```js
 bespoke.from('#presentation', [
-  bespoke.plugins.ga()
+  // Use your Google Analytics Tracking ID instead of 'UA-XXXXX-X'
+  bespoke.plugins.ga({trackingId: 'UA-XXXXX-X'})
 ]);
 ```
 
